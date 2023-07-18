@@ -26,7 +26,7 @@ header{
     justify-content: space-around;
     align-items: center;
     width: 8%;
-    padding-left: 7%;
+    padding-left: 50px;
 }
 
 
@@ -53,6 +53,12 @@ header{
     font-family: Arial;
 }
 
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
 /* Hero img Styles */
 .bgi{
     background-image: url(../Images/blueprint-bg\ .svg);
@@ -72,8 +78,13 @@ header{
 }
 
 .paper{
-    background-image: url(../Images/paper.svg);
-    background-repeat: no-repeat;
+    display: flex;
+    width: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    padding-top: 150px;
+    
 }
 
 .herotext{
@@ -81,53 +92,58 @@ header{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+    margin-left: 50px;
+    z-index: +1;
+    font-size: 30px;
 }
 
 .me{
     width: 500px;
-    height: 400px;
+    height: 700px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
+    margin-left: 900px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    
 }
 
 /* Work Styles */
-.P1{
-    background-image: url(../Images/Rectangle\ 6.png);
-}
-.P2{
-    background-image: url(../Images/Rectangle\ 6.png);
-}
-.P3{
-    background-image: url(../Images/Rectangle\ 6.png);
-}
-.P4{
-    background-image: url(../Images/Rectangle\ 6.png); 
-}
-.P1, .P2, .P3, .P4{
-    margin: 20px;
-    width: 93%;
-    height: 510px;
-    border: none;
-    border-radius: 20px;
-}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
 .text{
-    background: rgb(97, 109, 122,0.7);
+    width:100%;
+    background: rgb(97, 109, 122);
     padding: 20px 40px;
     color: white;
     border: none;
     border-radius: 8px;
+    position: absolute;
+    bottom: 0px;
 }
 .row{
-
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-repeat: no-repeat;
-    background-position: center; 
+    margin-bottom: 50px;
 }
 .row1{
     flex-direction: column;
@@ -144,6 +160,8 @@ header{
     display: flex;
     height: 100%;
     width: 100%;
+    margin-bottom: auto;
+    padding-bottom: 50px;
     justify-content: center;
     align-items: center;
     background-color: rgb(97, 109, 122,0.7);
@@ -173,9 +191,21 @@ button{
     box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19); 
 }
 
+button:hover {
+    box-shadow: none;
+  }
+
 .socialsfoot{
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
